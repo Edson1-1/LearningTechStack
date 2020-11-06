@@ -16,7 +16,6 @@ const server = new Hapi.Server({
 db.authenticate()
     .then(() =>{ 
         console.log('Connected to Database...')
-        console.log(process.env.PASSWORD)
                 
     })
     .catch((err) => console.log('Error is:', err))
